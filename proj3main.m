@@ -51,7 +51,7 @@ while ishandle(fig)
     % Persistent Frame Differencing
     diff4 = abs(pfdFrame - images{currentImage});
     tmp = max(history - 5, 0); 
-    model4 = max(255 * model3, tmp);
+    model4 = max(255 * model2, tmp);
     history = max(history - 2, 0); 
     pfdFrame = images{currentImage};
     
