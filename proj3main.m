@@ -4,7 +4,6 @@
 % Read video to grayscale matrix
 filePath = uigetdir('Select the folder with images');
 jpgFiles = dir(fullfile(filePath, '*.jpg'));
-imageMatrices = cell(1, numel(jpgFiles));
 
 for i = 1:numel(jpgFiles)
     imagePath = fullfile(filePath, jpgFiles(i).name);
